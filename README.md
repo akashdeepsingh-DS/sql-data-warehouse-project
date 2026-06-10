@@ -357,6 +357,118 @@ Expected result:
 
     No rows
 
+## Analytics & Business Insights
+
+After building the Gold layer star schema, SQL analysis was performed to evaluate sales performance, product performance, customer behavior, and category contribution.
+
+### Key Business Metrics
+
+| Metric | Value |
+|---|---:|
+| Total Sales | 29,356,250 |
+| Total Quantity Sold | 60,423 |
+| Average Price | 486 |
+| Total Orders | 27,659 |
+| Total Products | 295 |
+| Total Customers | 18,484 |
+
+### Category Performance
+
+Bikes were the strongest revenue-generating category, contributing the majority of total sales.
+
+| Category | Total Sales | Contribution |
+|---|---:|---:|
+| Bikes | 28,316,272 | 96.46% |
+| Accessories | 700,262 | 2.39% |
+| Clothing | 339,716 | 1.16% |
+
+**Insight:**  
+The business is highly dependent on the Bikes category, which generated 96.46% of total revenue. Accessories and Clothing contributed a much smaller share, which may indicate an opportunity for cross-selling or category growth.
+
+### Top 5 Products by Revenue
+
+| Product | Total Revenue |
+|---|---:|
+| Mountain-200 Black- 46 | 1,373,454 |
+| Mountain-200 Black- 42 | 1,363,128 |
+| Mountain-200 Silver- 38 | 1,339,394 |
+| Mountain-200 Silver- 46 | 1,301,029 |
+| Mountain-200 Black- 38 | 1,294,854 |
+
+**Insight:**  
+The top-performing products are all Mountain-200 bike models, showing strong demand for premium bike products.
+
+### Lowest 5 Products by Revenue
+
+| Product | Total Revenue |
+|---|---:|
+| Racing Socks- L | 2,430 |
+| Racing Socks- M | 2,682 |
+| Patch Kit/8 Patches | 6,382 |
+| Bike Wash - Dissolver | 7,272 |
+| Touring Tire Tube | 7,440 |
+
+**Insight:**  
+The lowest-revenue products are mainly accessories and maintenance items. Their low revenue may be influenced by lower selling prices, so these products should also be evaluated using quantity sold and profit margin.
+
+### Sales Trend Over Time
+
+Sales increased significantly during 2013, with the highest monthly sales recorded in December 2013.
+
+| Month | Total Sales |
+|---|---:|
+| 2013-06 | 1,642,948 |
+| 2013-10 | 1,673,261 |
+| 2013-11 | 1,780,688 |
+| 2013-12 | 1,874,128 |
+
+**Insight:**  
+The business showed strong growth during 2013, with sales reaching the highest point in December 2013. January 2014 appears to contain partial-month data, so it should not be treated as a full-period performance decline without further validation.
+
+### Customer Segmentation
+
+Customers were grouped into New, Regular, and VIP segments based on lifespan and total spending.
+
+| Customer Segment | Total Customers |
+|---|---:|
+| New | 14,631 |
+| Regular | 2,198 |
+| VIP | 1,655 |
+
+**Insight:**  
+Most customers are classified as New, showing a large base of recent or short-lifecycle customers. VIP customers are smaller in number but represent an important high-value customer group.
+
+### Customer Segment Performance
+
+| Customer Segment | Total Customers | Total Sales | Average Order Value | Average Monthly Spend |
+|---|---:|---:|---:|---:|
+| New | 14,629 | 11,086,797 | 601 | 506 |
+| VIP | 1,653 | 10,760,470 | 2,633 | 319 |
+| Regular | 2,200 | 7,503,991 | 1,682 | 193 |
+
+**Insight:**  
+VIP customers generated almost the same total revenue as New customers despite being a much smaller group. They also had the highest average order value, making them an important segment for retention and loyalty strategies.
+
+### Product Segment Performance
+
+| Product Segment | Total Products | Total Sales | Total Quantity | Average Order Revenue |
+|---|---:|---:|---:|---:|
+| High-Performer | 66 | 27,643,724 | 20,322 | 1,879 |
+| Mid-Range | 58 | 1,671,837 | 31,554 | 313 |
+| Low-Performer | 6 | 35,697 | 8,528 | 6 |
+
+**Insight:**  
+High-performing products generated the majority of revenue, even though mid-range products sold more units. This suggests that high-performing products have much higher selling prices and are the main drivers of revenue.
+
+### Summary of Insights
+
+- Bikes contributed 96.46% of total sales and were the main revenue driver.
+- Mountain-200 bike models dominated the top product rankings.
+- Accessories and Clothing contributed a small share of revenue, creating potential cross-selling opportunities.
+- Sales grew strongly during 2013 and peaked in December 2013.
+- New customers formed the largest customer segment.
+- VIP customers were fewer but generated high revenue and had the highest average order value.
+- High-performing products generated most of the revenue, while mid-range products sold more units but produced lower revenue.
 ## Project Folder Structure
 
 ```text
@@ -442,7 +554,8 @@ D. Which customers contribute most to sales?
 E. How do sales vary by country?
 F. What is the relationship between customer demographics and sales?
 G. Which product lines have stronger performance?
-H. What I Learned
+
+## What I Learned
 
 Through this project, I learned how to:
 
