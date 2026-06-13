@@ -105,6 +105,8 @@ This project uses data from two source systems:
     - erp_loc_a101
     - erp_px_cat_g1v2
   
+![Data Integration Diagram](docs/data_integration.jpg)
+  
 ## Data Warehouse Layers
 
 1. Bronze Tables
@@ -246,6 +248,8 @@ Load Bronze Layer
 The Gold layer is modeled as a star schema.
 
     gold.dim_products --- gold.fact_sales --- gold.dim_customers
+
+![Star Schema](docs/sales_data_mart.jpg)
 
 ### Dimension Tables
 
