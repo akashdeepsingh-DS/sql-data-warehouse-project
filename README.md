@@ -45,25 +45,6 @@ The data warehouse enables:
 
 The project follows the **Medallion Architecture**:
 
-```text
-  Source CSV Files
-          |
-          v
-  Bronze Layer
-  Raw data ingestion
-          |
-          v
-  Silver Layer
-  Data cleaning and standardization
-          |
-          v
-  Gold Layer
-  Business-ready star schema
-          |
-          v
-  BI / Analytics / Reporting
-
-```
 ![Project Architecture](docs/architecture.jpg)
 
 Bronze Layer
@@ -168,6 +149,8 @@ This project uses data from two source systems:
 
 
 ## ETL Process
+
+![Data Flow Diagram](docs/data_flow.jpg)
 
 The ETL process is divided into two main stored procedures.
 
