@@ -45,7 +45,7 @@ The data warehouse enables:
 
 The project follows the **Medallion Architecture**:
 
-
+```text
   Source CSV Files
           |
           v
@@ -63,6 +63,8 @@ The project follows the **Medallion Architecture**:
           v
   BI / Analytics / Reporting
 
+```
+![Project Architecture](docs/architecture.jpg)
 
 Bronze Layer
 
