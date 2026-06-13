@@ -480,10 +480,10 @@ sql-data-warehouse-project/
 │   └── source_erp/
 │
 ├── docs/
-│   ├── data_architecture.png
-│   ├── data_flow_diagram.png
-│   ├── data_integration_diagram.png
-│   ├── data_model.png
+│   ├── architecture.jpg
+│   ├── Data Flow.jpg
+│   ├── data_integration.jpg
+│   ├── Sales Data Mart.jpg
 │   └── data_catalog.md
 │
 ├── scripts/
